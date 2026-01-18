@@ -1,0 +1,120 @@
+@import url(./global.css);
+@import url(./reset.css);
+
+header{
+  grid-area: header;
+  display: grid;
+  padding: 0px 24px;
+  place-content: center space-between;
+  grid-auto-flow: column;
+}
+
+.left{
+  display: grid;
+  align-content: center;
+  gap: 24px;
+  grid-template-rows: max-content;
+  grid-auto-flow: column;
+}
+
+.center{
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.center input{
+  width: 348px;
+  padding-left: 12px;
+  border: 1px solid lightgray;
+}
+
+.center button{
+  width: 57px;
+  border: 1px solid lightgray;
+}
+
+.right{
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 24px;
+}
+
+aside{
+  grid-area: aside;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 22px;
+  padding: 24px;
+  grid-auto-rows: max-content;
+}
+
+aside button{
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 16px;
+  text-align: left;
+}
+
+main{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(3,1fr);
+  padding: 24px;
+  gap: 16px;
+}
+
+main section{
+  display: grid;
+  row-gap: 16px;
+}
+
+main section img{
+  cursor: pointer;
+}
+
+main section div{
+  display: grid;
+  grid:
+  "channel title" .5fr 
+  ". details" 1fr 
+  / auto 1fr;
+  column-gap: 10px;
+}
+
+main section div img{
+  grid-area: channel;
+  cursor: pointer;
+}
+
+.title{
+  grid-area: title;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details{
+  grid-area: details;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.transparent_button{
+  border: none;
+  background-color: transparent
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+p{
+  font-size: 14px;
+}
+
+.selected{
+  font-weight: 700;
+}
+

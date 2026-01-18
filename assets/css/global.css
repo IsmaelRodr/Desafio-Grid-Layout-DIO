@@ -1,0 +1,13 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid:
+  "header header" 56px 
+  "aside main" 1fr 
+  / 218px 1fr;
+}
